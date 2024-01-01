@@ -1,0 +1,24 @@
+
+
+
+div{
+    background-color: red;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    outline: dotted greenyellow 10px;
+
+}
+
+div:hover{ /* al pasar el raton por encima */
+    outline-color: black;
+    outline-width: 6px;
+}
+
+div:active{ /* Al clicar */
+    outline-color: blue;
+    outline-width: 20px;
+}
+
+
+

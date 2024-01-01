@@ -1,0 +1,82 @@
+*{
+    background-color: beige;
+} /* Apartado 1 */
+
+p{
+    color: green
+} /* Apartado 2 */
+
+#title-1{} /* Apartado 3 */
+
+.bg-yellow{
+    color:blue;
+} /* Apartado 4 */
+
+[id]{
+    background-color: blueviolet;
+} /* Apartado 5 */
+
+[id="title-1"]{
+    color:aquamarine;
+} /* Apartado 6 */
+
+a[href]{
+    background-color: antiquewhite;
+} /* Apartado 7 */
+
+[class^="title"]{
+    background-color: red;
+} /* Apartado 8 */
+
+a[href$=".com"]{
+    color: green;
+} /* Apartado 9 */
+
+[class*="title"]{
+    font-style: italic;
+} /* Apartado 10 */
+
+a[href *="127"]{
+    background-color: aqua;
+} /* Apartado 11 */
+
+a[href ^="http"]{
+    font: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} /* Apartado 12 */
+
+a,p,h1{
+} /* Apartado 13 */
+
+main p{
+    background-color: azure;
+
+} /* Apartado 14 */
+
+h1+*{
+    background-color: coral !important;
+} /* Apartado 15 */
+
+h1~*{
+   /* background-color: coral !important; */
+} /* Apartado 16 */
+
+main *{
+    /* background-color: aqua !important; */
+} /* Apartado 17 */
+
+
+/* Ejercicio de numero dentro de un rango */
+
+input:in-range{
+    border: 2px solid green;
+    background-color: chartreuse;
+}
+
+input:out-of-range{
+    border: 2px solid red;
+    background-color: orange;
+}
+
+
+

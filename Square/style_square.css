@@ -1,0 +1,92 @@
+
+/*
+
+/*
+ Forma 1 de hacerlo
+
+.square{
+    align-items: center;
+    margin: 20px;
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    border: thick solid black;
+}
+
+.circle{
+    margin-left: 10px;
+    background-color: green;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    border: solid black thin; 
+    border-radius: 50%;
+}
+
+#circle1{
+    margin-top: -340px;
+}
+
+#circle2{
+    margin-top: -22px;
+    margin-left: 318px;
+}
+
+#circle3{
+    margin-top: 290px;
+    margin-bottom: -22px;
+    margin-left: 318px;
+}
+
+*/
+
+/* Forma 2*/
+
+.square{
+    background-color: red;
+    margin: 40px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: thick solid black;
+}
+
+.circle{
+    background-color: green;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    border: solid black thin; 
+    border-radius: 50%;
+}
+
+#circle1{
+    position: absolute;
+    top: -5%;
+    left: -5%;
+}
+
+#circle2{
+    position: absolute;
+    top: -5%;
+    right: -5%;
+}
+
+#circle3{
+    position: absolute;
+    bottom: -5%;
+    left: -5%;
+}
+
+#circle4{
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+
+}
+
+
+
+/* Forma 3 
+flex
+*/ 

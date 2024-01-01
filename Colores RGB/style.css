@@ -1,0 +1,196 @@
+
+/* Para Todos los Objetos */
+body{
+    margin: 0px; /* Para eliminar el scrool */
+    background-color: cadetblue; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Clases */
+h2{
+    margin-top: 1px;
+    font-style: bold;
+    text-align: center;
+    border: solid rgba(137, 26, 162, 1); thick;
+    background-color: rgb(190, 121, 206);
+    text-shadow: white 5px -10px 40px;
+    opacity: 0.85;
+    box-shadow: rgba(12, 143, 145, 0.75) 0px 15px 15px, rgba(0, 0, 0, 0.65) 0px 15px 30px;
+}
+
+.circulo{
+    margin: 10px;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: black thick solid;
+    box-shadow: rgba(0, 0, 0, 0.65) 0px 15px 30px;
+}
+
+.circulo-mix{
+    margin: 10px;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    mix-blend-mode: screen; 
+    border: black thick solid;
+    box-shadow: rgba(0, 0, 0, 0.65) 0px 15px 30px;
+}
+
+/* Containers */
+.container{
+    isolation: isolate;
+    margin: 10px;
+    width: 900px;
+    background-color: rgba(137, 26, 162, 1);
+    box-shadow:rgba(0, 0, 0, 0.65) 0px 15px 30px;
+}
+
+.Paragrafo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; 
+}
+
+p{
+    margin: 10px;
+    text-align: center;
+    font-size: 50px;
+    font-style: bold;
+    text-shadow: rgba(0, 0, 0, 0.85) 2px 25px 30px;
+}
+
+/* Instancias ----------------------------*/
+
+.container-3{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.Paragrafo-1-intersec{
+    isolation: isolate;
+    height: 350px;
+}
+
+.Paragrafo-1{
+    display: flex;
+    justify-content:center;
+}
+
+
+.Rojo{
+    position: relative;
+    background-color:red;
+    left: 340px;
+}
+
+.Verde{
+    position: relative;
+    background-color: rgb(0,255,000);
+    left: 290px;
+    top: -130px;
+}
+
+.Azul{
+    position: relative;
+    background-color: rgb(0,0,255);
+    top: -350px;
+    left: 390px;
+}
+
+/*Solo los circulos que se muestran*/
+.Rojo-solo{
+    background-color:red;
+}
+
+.Verde-solo{
+    background-color: rgb(0,255,000);
+}
+
+.Azul-solo{
+    background-color: rgb(0,0,255);
+}
+
+/* Colores secundarios */
+.Amarillo-solo{
+    background-color: rgb(255,255, 0);
+}
+
+.Azul-Claro-solo{
+    background-color: rgb(0,255,255);
+}
+
+.Lila-solo{
+    background-color: rgb(255,0,255);;
+}
+
+/* Definiciones en función de la pantalla ----------------- */
+@media ( 700px >width >= 200px ){
+    .circulo{
+        margin: 10px;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        border: black thick solid;
+        box-shadow: rgba(0, 0, 0, 0.65) 0px 15px 30px;
+    }
+    
+    .Paragrafo-1-intersec{
+        isolation: isolate;
+        height: 150px;
+    }
+    .circulo-mix{
+        margin: 10px;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        mix-blend-mode: screen; 
+        border: black thick solid;
+        box-shadow: rgba(0, 0, 0, 0.65) 0px 15px 30px;
+    }
+
+    .container{
+        isolation: isolate;
+        margin: 10px;
+        width: 300px;
+        background-color: rgba(137, 26, 162, 1);
+        box-shadow:rgba(0, 0, 0, 0.65) 0px 15px 30px;
+    }
+    
+    p{
+        margin: 10px;
+        text-align: center;
+        font-size: 30px;
+        font-style: bold;
+        text-shadow: rgba(0, 0, 0, 0.85) 2px 25px 30px;
+    }
+
+    /* Alineamos la interseccion again */
+    .Rojo{
+        position: relative;
+        background-color:red;
+        top: 30px;
+        left: 115px;
+
+    }
+    
+    .Verde{
+        position: relative;
+        background-color: rgb(0,255,000);
+        top:-20px;
+        left: 135px;
+
+    }
+    
+    .Azul{
+        position: relative;
+        background-color: rgb(0,0,255);
+        top: -90px;
+        left: 100px;
+    }
+}
+

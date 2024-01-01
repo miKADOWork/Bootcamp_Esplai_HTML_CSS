@@ -1,0 +1,260 @@
+main{
+    margin: 5px;
+    text-align: center;
+}
+
+.contenedor{
+    margin-bottom: 20px;
+}
+
+.paragrafo-cabeza{
+    background-color: #FBA641;
+}
+
+.paragrafo-cuerpo1-1{
+    background-color: #DEEB42;
+    height: 250px;
+}
+
+.paragrafo-cuerpo2-1{
+    background-color: blue;
+    height: 200px;
+    width: 33%;
+    display: inline-block;
+}
+
+
+/* Mobile less or equal than 320px*/
+@media (width <= 320px){
+    .paragrafo-cabeza{
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .paragrafo-cuerpo1-1{
+        background-color: #DEEB42;
+        height: 100px;
+        
+    }
+}
+
+/* Tablet more than 320px and less than 1024px*/
+
+@media (320px < width < 1024px ){
+
+    .paragrafo-cabeza{
+        height: 100px;
+    }
+    .paragrafo-cabeza{
+        height: 125px;
+        margin-bottom: 10px;
+    }
+
+    .paragrafo-cuerpo1-1{
+        background-color: #DEEB42;
+        height: 180px;
+    }
+
+    .paragrafo-cuerpo2-1{
+        background-color: blue;
+        height: 100px;
+    }
+
+    .paragrafo-cuerpo2-1{
+        background-color: blue;
+        height: 100px;
+        width: 33%;
+        align-items: column;
+    }
+}
+
+/* Desktop -> More than 1024px */
+@media (width >= 1024px){
+    .paragrafo-cabeza{
+        height: 125px;
+        width: 49.5%;
+        display: inline-block;
+    }
+
+    .paragrafo-cabeza-1{
+        margin-right: 5px;
+    }
+
+    .parragrafo-cabeza-2{
+        margin-left: 5px;
+    }
+    
+
+
+}
+/*
+.Cabezera{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Paragrafo{
+    margin: 1vw;
+    width: 45vw;
+    height: 15vh;
+    min-width: 10vw;
+    background-color: green;
+}
+
+.Paragrafo-Cabeza-1{
+    background-color: yellow;
+}
+.Paragrafo-Cabeza-2{
+    background-color: yellow;
+}
+
+.Cuerpo-1{
+    margin: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Paragrafo-Cuerpo1-1{
+    width: 95vw; 
+    height: 30vh;
+    background-color: pink;
+}
+
+.Cuerpo-2{
+    margin: 1vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Paragrafo-Cuerpo2-1{
+    margin: 1vw;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 15vh;
+}
+
+.pie{
+    margin: 1vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.agrupador-1{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+}
+
+.agrupador-2{
+    
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+}
+
+.Paragrafo-Pie{
+    margin: 1vw;
+    width: 22vw;
+    height: 15vh;
+    background-color: blue;
+}
+
+
+
+/* Responsive por pixeles  */
+/*
+@media(width <= 520px){
+
+        .pie{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .agrupador-1{
+            flex-direction: column;
+        }
+        
+        .agrupador-2{
+            flex-direction: column;
+        }
+
+        .Paragrafo-Pie{
+            margin: 1vw;
+            width: 90vw;
+            height: 15vh;
+            flex-direction: column;
+            background-color: blue;
+        }
+    
+    }
+
+    /*  Cambio a 500px porque ne mi pantalla no se ve sino*/
+/*@media(868px >= width > 520px){
+    .Cabezera{
+        margin: 1vw;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    
+
+    .Paragrafo-Cabeza-1{
+        margin: 1vw;
+        width: 92vw; 
+        height: 15vh;
+
+    }
+
+    .Paragrafo-Cabeza-2{
+        margin: 1vw;
+        width: 92vw; 
+        height: 15vh;
+    }
+
+    .Paragrafo-Cuerpo2-1{
+        margin: 1vw;
+        width: 93vw;
+        height: 15vh;
+    }
+    
+    .Paragrafo-Cuerpo1-1{
+        margin: 1vw;
+        width: 95vw;
+        height: 30vh;
+
+    }
+    .Cuerpo-2{
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pie{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Paragrafo-Pie{
+        margin: 1vh;
+        width: 45vw;
+        height: 15vh;
+        flex-direction: column;
+        background-color: blue;
+    }
+
+    .agrupador-1{
+        flex-direction: row;
+    }
+    
+    .agrupador-2{
+        flex-direction: row;
+    }
+}

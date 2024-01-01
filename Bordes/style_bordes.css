@@ -1,0 +1,31 @@
+#Bordes_poner{
+    width: 300px;
+    margin: 30px;
+    background-color: aqua;
+    padding: 30px; /* */
+    /* */
+    border-right: double medium blue;
+    border-left: solid medium blue;
+    border-top: dotted medium green;
+    border-bottom: solid medium red;
+    border-radius: 10px;
+    text-align: center;
+    border-top-right-radius: 40px; /* modifica una de las esquinas del div */
+}
+
+
+/*
+content-box 
+box size 
+
+
+text-align
+alienea texxto dentro de una caja
+
+border-radius
+*/
+
+/*
+ para crear un circunfeerencia 50% en vez de pixeles
+ tabien se pueden hacer elipses metiendo dos parametreos 
+*/ 
